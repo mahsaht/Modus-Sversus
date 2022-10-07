@@ -1,0 +1,169 @@
+
+main>div:nth-of-type(1){
+    background-color: rgb(236, 236, 236);
+}
+main>div:nth-of-type(1)>div:nth-of-type(1){
+    padding: 40px 0;
+    overflow: auto;
+}
+main>div:nth-of-type(1)>div:nth-of-type(1) h3{
+    float: left;
+}
+main>div:nth-of-type(1)>div:nth-of-type(1) p{
+    float: right;
+    font-size: 0.8em;
+}
+main>div:nth-of-type(1)>div:nth-of-type(2){
+    position: relative;
+}
+main>div:nth-of-type(1) i{
+    color:rgb(236, 236, 236);
+    position: absolute;
+    top: -20px;
+    left: 0px;
+}
+main>div:nth-of-type(2){
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+main>div:nth-of-type(2)>h1{
+    color: #e6635c;
+    margin-bottom: 20px;
+}
+main>div:nth-of-type(2)>p{
+    line-height: 20px;
+    font-size: 0.8em;
+}
+
+/*---------------------Pie Chart------------------- */
+#pie>section:nth-of-type(2){
+    margin-left: 40px;
+}
+
+
+
+/*---------------------Pricing Table------------------- */
+main>article:nth-of-type(1){
+    background-color: rgb(236, 236, 236);
+    margin-bottom: 150px;
+    margin-top: 60px;
+}
+main>article:nth-of-type(1)>div>h1{
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 50px;
+}
+main>article:nth-of-type(1)>div>section{
+    background-color: rgb(248, 248, 248);
+    display: inline-block;
+    width: 225px;
+    margin-right: 15.5px;
+    position: relative;
+    bottom: -50px;
+    border-radius: 5px;
+    box-shadow: 0 3px 4px 4px rgb(229, 229, 229);
+    transition: all 0.7s;
+}
+main>article:nth-of-type(1)>div>section:last-of-type{
+    margin-right: 0px;
+}
+main>article:nth-of-type(1)>div>section h3{
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    text-align: center;
+    background-color: #76c7c1;
+    color: white;
+    font-size: 0.9em;
+    margin-left: 32.5px;
+    position: absolute;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 1s;
+}
+main>article:nth-of-type(1)>div>section>h3:first-of-type{
+    top: 0px;
+}
+main>article:nth-of-type(1)>div>section>h3:last-of-type{
+    bottom: 0px;
+}
+main>article:nth-of-type(1)>div>section ul{
+    padding: 40px 20px;
+}
+main>article:nth-of-type(1)>div>section li{
+    list-style-type: none;
+    line-height: 40px;
+    font-size: 0.9em;
+    text-align: center;
+    border-bottom: 1px solid rgb(236, 236, 236);
+    transition: all 0.7s;
+}
+main>article:nth-of-type(1)>div>section li:last-of-type{
+    border-bottom: 0px;
+}
+main>article:nth-of-type(1)>div>section:hover{
+    background-color: #76c7c1;
+    transform:scaleY(1.1);
+}
+main>article:nth-of-type(1)>div>section:hover h3{
+    background-color: #e6635c;
+    transform:scaleY(0.909);
+}
+main>article:nth-of-type(1)>div>section:hover li{
+    color: white;
+    transform:scaleY(0.909);
+}
+main>article:nth-of-type(1)>div>section:hover h3:first-of-type{
+    top: -20px;
+}
+main>article:nth-of-type(1)>div>section:hover h3:last-of-type{
+    bottom: -20px;
+}
+
+
+
+
+/*-----------------------IDEA---------------------- */
+main>div:nth-of-type(4){
+    margin-bottom: 50px;
+}
+main>div:nth-of-type(4)>h1{
+    color: #e6635c;
+    text-align: center;
+    margin-bottom: 20px;
+}
+main>div:nth-of-type(4)>p{
+    text-align: center;
+}
+
+
+
+/*-----------------------Designer Slider--------------------- */
+main>article:nth-of-type(2){
+    position: relative;
+}
+
+
+.slide-prev, .slide-next{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0px;
+    background-color: #76c7c1;
+    color: white;
+    line-height: 20px;
+    text-align: center;
+    box-shadow: 0 3px 4px gray;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+.slide-prev{
+    right: 25px;
+}
+.slide-next{
+    right: 0px;
+}
+.slide-prev:hover, .slide-next:hover{
+    background-color: #e6635c;
+}

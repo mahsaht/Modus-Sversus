@@ -1,0 +1,44 @@
+.ruller{
+    position: relative; 
+}
+.r-black{
+    --color: rgb(100, 100, 100);
+}
+.r-white{
+    --color: white;
+}
+
+.r-large{
+    background-image: 
+                repeating-linear-gradient(to right, 
+                var(--color) 0px, var(--color) 1px, transparent 2px, transparent 25px);
+    height: 10px;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    left: 0px;
+    top: 0px
+}
+.r-small{
+    background-image: 
+                repeating-linear-gradient(to right, 
+                        transparent, transparent 5px, 
+                        var(--color) 6px,transparent 7px,transparent 10px, 
+                        var(--color) 11px,transparent 12px,transparent 15px,
+                        var(--color) 16px,transparent 17px,transparent 20px,
+                        var(--color) 21px,transparent 22px,transparent 25px
+                        );
+    height: 8px;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    left: 0px;
+}
+
+
+.r-up{
+    top: 2px !important;
+}
+.r-down{
+    top: 0px !important;
+}

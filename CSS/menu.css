@@ -1,0 +1,131 @@
+/* ------------------General Properties------------------- */
+#menu{
+    float: right;
+    width: 740px;
+}
+#menu a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+#menu li{
+    line-height: 30px;
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    list-style: none;
+}
+#menu ul,#menu ol{
+    transition: all 0.5s, z-index 0.001s ;
+    z-index: 1001;
+}
+
+
+/* ------------------Root Menu------------------- */
+#menu>ul{
+    line-height: 80px;
+}
+
+#menu>ul>li{
+    display: inline-block;
+    margin-left: 13px;
+    position: relative;
+}
+
+#menu>ul>li>a{
+    text-transform: uppercase;
+}
+#menu>ul>li:hover{
+    background-color: #e6635c;
+    box-shadow: 0px 3px #df514c;   
+}
+#menu>ul>li>a>i{
+    margin-right: 5px;
+    color: white;
+}
+
+/* ------------------Sub Menu General Properties------------------- */
+.sub-menu{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    width: 200px;
+    background-color: #e44e50;
+    font-size: 1.3em;
+    border-radius: 5px;
+}
+.sub-menu>li{
+    background-color: #e6635c;
+    box-shadow: 0px 3px #df514c; 
+    margin: 0px 0;
+    position: relative;
+    border-left: 5px solid #df514c;
+    border-right: 5px solid #df514c;
+    border-top: 2.5px solid #df514c;
+    border-bottom: 2.5px solid #df514c;
+    border-radius: 5px;
+}
+.sub-menu>li:first-of-type{
+    border-top: 5px solid #df514c;
+}
+.sub-menu>li:hover{
+    background-color: #76c7c1;
+}
+.sub-menu>i{
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    color: #e44e50;
+    width: 200px;
+    text-align: left;
+}
+.sub-menu>span{
+    position: absolute;
+    top: 2px;
+    left: -9px;
+    color: #e44e50;
+    height: 30px;
+    text-align: left;
+    padding-left: 4px;
+}
+
+/* ------------------First Sub Menu------------------- */
+#menu>ul>li>   ul{
+    top: 15px;
+    left: 0px;
+    z-index: -10;
+}
+#menu>ul>li>   ul>li>a>span{
+    margin-right: 10px;
+    color: white;
+}
+
+
+#menu>ul>li:nth-of-type(4):hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 40px;
+    z-index: 1;
+}
+
+
+
+/* ------------------Second Sub Menu------------------- */
+#menu>ul>li>    ul>li:hover ol{
+    visibility: visible;
+    opacity: 1;
+    left: 204px;
+    z-index: 1;
+}
+/* #menu ol:hover ol{
+    visibility: visible;
+    opacity: 1;
+} */
+#menu ol{
+    left: 150px;
+    top: -3px;
+    z-index: -10;
+}
+
+

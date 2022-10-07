@@ -1,0 +1,98 @@
+/* --------------------------------Container------------------- */
+#top-services{
+    background-color: #ececec;
+    margin: 10px 0;
+    padding: 20px;
+    overflow: auto;
+    border-radius: 5px;
+}
+#top-services h1{
+    font-size: 2em;
+}
+#top-services p{
+    font-size: 0.8em;
+}
+#top-services>section:nth-of-type(1){
+    float: left;
+    width: 650px;
+    /* margin-top: 20px; */
+}
+#top-services>section:nth-of-type(2){
+    float: right;
+    background-color: #e6635c;
+    width: 200px;
+    height: 60px;
+    color: white;
+    line-height: 60px;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor:pointer;
+}
+#top-services>section:nth-of-type(2):hover{
+    background-color: #76c7c1;
+}
+
+
+
+/* ---------------------------------docs---------------------- */
+.docs{
+    width: 217.5px;
+    height: 315px;
+    box-shadow: 0px 0px 5px #76c7c1;
+    padding: 40px 10px;
+    margin:40px 25px 40px 0px;
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+}
+.last-doc{
+    margin-right: 0px;
+}
+.docs i{
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor:pointer;
+}
+.docs h3{
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+.docs>p:first-of-type{
+    text-align: center;
+    line-height: 20px;
+    font-size: 0.9em;
+}
+.docs>p:nth-of-type(2){
+    position: absolute;
+    bottom: -20px;
+    background-color: #76c7c1;
+    width: 152px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 23.5px;
+    line-height: 40px;
+    color: white;
+    cursor: pointer;
+}
+.docs:hover{
+    background-color: white;
+    box-shadow: 0px 0px 5px rgb(43, 43, 43);
+}
+.docs:hover i, .docs:hover h3{
+    color: #e6635c
+}
+.docs:hover p:nth-of-type(2){
+    background-color:#e6635c ;
+    box-shadow: 0px 0px 5px rgb(43, 43, 43);
+}
+
+
+/* ---------------------------------pie---------------------- */
+#pie{
+    margin-top: 150px;
+}
